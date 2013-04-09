@@ -1,1 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<formular>
+	<gruppenleiter>
+		<person>
+			<person_id id = "1"/>
+			<gruppen_id id = "1"/>
+			<vorname> Heinrich </vorname>
+			<nachname> Henkel </nachname>
+			<email> henkel@test.de </email>
+			<geburtsdatum> 01.01.1900 </geburtsdatum>		
+			<erfahrung choise="3"> Profi </erfahrung>
+			<schlagzeug boolean="true"> vorhanden </schlagzeug>
+			<anmerkungen> Talentierter Lehrer </anmerkungen>
+		</person>
+	</gruppenleiter>
+
+	<teilnehmer>
+		<person>
+			<person_id id = "2"/>
+			<gruppen_id id = "1"/>
+			<vorname> Artur </vorname>
+			<nachname> Amsel </nachname>
+			<email> amsel@test.de </email>
+			<geburtsdatum> 05.05.1990 </geburtsdatum>		
+			<erfahrung choise="1"> Amateur </erfahrung>
+			<schlagzeug boolean="true"> vorhanden </schlagzeug>	
+		</person>
+		
+		<person>
+			<person_id id = "3"/>
+			<gruppen_id id = "1"/>
+			<vorname> Ben </vorname>
+			<nachname> Bongo </nachname>
+			<email> bongo@test.de </email>
+			<geburtsdatum> 11.11.2011 </geburtsdatum>		
+			<erfahrung choise="2"> Fortgeschrittener </erfahrung>
+			<schlagzeug boolean="false"> nicht vorhanden </schlagzeug>	
+		</person>
+	</teilnehmer>
+</formular>
