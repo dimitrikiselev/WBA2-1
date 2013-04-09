@@ -9,7 +9,7 @@
 			<nachname> Henkel </nachname>
 			<email> henkel@test.de </email>
 			<geburtsdatum> 01.01.1900 </geburtsdatum>		
-			<erfahrung choise="3"> Profi </erfahrung>
+			<erfahrung choice="3"> Profi </erfahrung>
 			<schlagzeug boolean="true"> vorhanden </schlagzeug>
 			<anmerkungen> Talentierter Lehrer </anmerkungen>
 		</person>
@@ -23,7 +23,7 @@
 			<nachname> Amsel </nachname>
 			<email> amsel@test.de </email>
 			<geburtsdatum> 05.05.1990 </geburtsdatum>		
-			<erfahrung choise="1"> Amateur </erfahrung>
+			<erfahrung choice="1"> Amateur </erfahrung>
 			<schlagzeug boolean="true"> vorhanden </schlagzeug>	
 		</person>
 		
@@ -34,7 +34,7 @@
 			<nachname> Bongo </nachname>
 			<email> bongo@test.de </email>
 			<geburtsdatum> 11.11.2011 </geburtsdatum>		
-			<erfahrung choise="2"> Fortgeschrittener </erfahrung>
+			<erfahrung choice="2"> Fortgeschrittener </erfahrung>
 			<schlagzeug boolean="false"> nicht vorhanden </schlagzeug>	
 		</person>
 	</teilnehmer>
