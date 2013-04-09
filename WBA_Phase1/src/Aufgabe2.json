@@ -1,0 +1,46 @@
+{ "formular":
+	{ "gruppenleiter":
+		{ "person": [
+			{ 
+			"person_id":1,
+			"gruppen_id":1,
+			"vorname":"Heinrich",
+			"nachname":"Henkel",
+			"email":"henkel@test.de",
+			"geburtsdatum":"01.01.1900",
+			"erfahrung":3,
+			"schlagzeug":true,
+			"anmerkungen":"Talentierter Lehrer",
+			}
+			],
+		}
+	
+	
+	{ "teilnehmer":
+		{ "person": [
+			{
+			"person_id":2,
+			"gruppen_id":1,
+			"vorname":"Artur",
+			"nachname":"Amsel",
+			"email":"amsel@test.de",
+			"geburtsdatum":"05.05.1990",
+			"erfahrung":1,
+			"schlagzeug":true,
+			},
+		
+			{
+			"person_id":3,
+			"gruppen_id":1,
+			"vorname":"Ben",
+			"nachname":"Bongo",
+			"email":"bongo@test.de",
+			"geburtsdatum":"11.11.2011",
+			"erfahrung":2,
+			"schlagzeug":false,
+			}
+			]
+		}
+	}
+}
+	
