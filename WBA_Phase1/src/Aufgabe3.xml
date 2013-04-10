@@ -1,10 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chefkoch>
+	<rezept id="1">
+		<name>Lenchen’s Schokoladenkuchen</name>
+			<bilder>
+				<bild bild_id="1" width="100%" hight="100%" user="Pantera81"><link src="http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/96612-960x720-lenchen-s-schokoladenkuchen.jpg"></link></bild>
+				<bild bild_id="2" width="100%" hight="100%" user="Scheinie"><link src="http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/98403-960x720-lenchen-s-schokoladenkuchen.jpg"></link></bild>
+				<bild bild_id="3" width="100%" hight="100%" user="beast354"><link src="http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/167437-960x720-lenchen-s-schokoladenkuchen.jpg"></link></bild>
+				<bild bild_id="4" width="100%" hight="100%" user="beast354"><link src="http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/201651-960x720-lenchen-s-schokoladenkuchen.jpg"></link></bild>
+			</bilder>
+			<zubereitung>
+				<zeit> 1Std </zeit>
+				<schwierigkeit> normal </schwierigkeit>
+				<brennwert> 295 kcal </brennwert>
+				<anleitung>Butter und Schokolade im Wasserbad schmelzen. Eier trennen. Eiweiß steif schlagen. 
+				Eigelbe, Zucker und Vanillezucker verrühren. Geschmolzene Butter-Schokomasse hinzufügen und mischen. 
+				Mehl mit dem Backpulver in die Masse sieben und zum Schluss die steifen Eiweiße vorsichtig 
+				unterheben. In eine gut gefettete Form geben. Bei 180°Grad 40 – 50 Minuten backen. </anleitung>
+			</zubereitung>
+			<zutaten>
+				<zutat einheit="g" menge="200">Butter</zutat>
+				<zutat einheit="g" menge="200">Zucker</zutat>
+				<zutat einheit="g" menge="200"><link src="http://www.chefkoch.de/magazin/artikel/105,0/Chefkoch/Schokolade.html">Schokolade, Blockschokolade</link></zutat>
+				<zutat einheit="g" menge="120">Mehl</zutat>
+				<zutat einheit="tl" menge="1/2"></zutat>
+				<zutat einheit="pkt" menge="1"></zutat>
+				<zutat einheit="stck" menge="4"><link src="http://www.chefkoch.de/magazin/artikel/908,0/Chefkoch/Das-Ei-der-heimliche-Kuechenstar-im-Rampenlicht.html"></link></zutat>
+			</zutaten>
 	
-
-
-
-
-
-
+	
+	
+			<comments>
+				<comment comment_id="1">
+					<user>Mane</user>
+					<user_pic><link src="http://static.chefkoch-cdn.de/ck.de/user/9029c94d48d6ef778a21f5284bfa2667.jpg"></link></user_pic>
+					<datum>07.01.2003</datum>
+					<uhrzeit>15:06</uhrzeit>
+					<kommentar>Habe ihn eben gebacken und bin begeistert.Super Rezept:-) LG Mane</kommentar>
+				</comment>
+				<comment comment_id="2">
+					<user>Bossie</user>
+					<user_pic><link src="http://static.chefkoch-cdn.de/ck.de/user/7455508321160e61bbf4bebcc723bee6.jpg"></link></user_pic>
+					<datum>17.02.2003</datum>
+					<uhrzeit>09:38</uhrzeit>
+					<kommentar>Habe den Kuchen am Sonntag gebacken, er war sehr lecker ist aber auch sehr mächtig. LG Anne</kommentar>
+				</comment>
+			</comments>
+	</rezept>
 </chefkoch>
