@@ -3,10 +3,10 @@
 	<rezept id="1">
 		<kuchenname>Lenchen’s Schokoladenkuchen</kuchenname>
 			<bilder>
-				<bild bild_id="1" width="100%" height="100%" user="Pantera81"><link src="http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/96612-960x720-lenchen-s-schokoladenkuchen.jpg"></link></bild>
-				<bild bild_id="2" width="100%" height="100%" user="Scheinie"><link src="http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/98403-960x720-lenchen-s-schokoladenkuchen.jpg"></link></bild>
-				<bild bild_id="3" width="100%" height="100%" user="beast354"><link src="http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/167437-960x720-lenchen-s-schokoladenkuchen.jpg"></link></bild>
-				<bild bild_id="4" width="100%" height="100%" user="beast354"><link src="http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/201651-960x720-lenchen-s-schokoladenkuchen.jpg"></link></bild>
+				<bild bild_id="1" user="Pantera81" src="http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/96612-960x720-lenchen-s-schokoladenkuchen.jpg"></bild>
+				<bild bild_id="2" user="Scheinie" src="http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/98403-960x720-lenchen-s-schokoladenkuchen.jpg"></bild>
+				<bild bild_id="3" user="beast354" src="http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/167437-960x720-lenchen-s-schokoladenkuchen.jpg"></bild>
+				<bild bild_id="4" user="beast354" src="http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/201651-960x720-lenchen-s-schokoladenkuchen.jpg"></bild>
 			</bilder>
 			<zubereitung>
 				<zeit> 1Std </zeit>

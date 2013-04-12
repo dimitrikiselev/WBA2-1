@@ -4,53 +4,64 @@
 	<!-- ID? -->
 		<a:complexType>
 			<a:sequence>
-				<a:element name="kuchenname" type="a:string"></a:element>
-			</a:sequence>
-		</a:complexType>
-		<a:complexType>
-			<a:sequence>
-				<a:element name="bilder" type="a:string">
-					<a:complexType>
-						<a:sequence>
-							<a:element name="bild" type="a:string">
-								<a:complexType>
-									<a:sequence>
-										<a:element name="bild_id"/>
-										<a:element name="width"/>
-										<a:element name="height"/>
-										<a:element name="user"/>
-										<a:element name="link"/>
-									</a:sequence>
-								</a:complexType>
-							</a:element>
-						</a:sequence>
-					</a:complexType>
+				<a:element name="kuchenname" type="a:string">
+					<a:element name="bilder" type="a:string">
+						<a:complexType>
+							<a:sequence>
+								<a:element name="bild" type="a:string">
+									<a:complexType>
+										<a:sequence>
+											<a:element name="bild_id" type="a:integer"/>
+											<a:element name="user" type="a:QName"/>
+											<a:element name="link" type="a:anyURI"/>
+										</a:sequence>
+									</a:complexType>
+								</a:element>
+							</a:sequence>
+						</a:complexType>
+					</a:element>
 				</a:element>
 				<a:element name="zubereitung" type="a:string">
 					<a:complexType>
 						<a:sequence>
 							<a:element name="zeit" type="a:string"/>
 							<a:element name="schwierigkeit" type="a:string"/>
-							<a:element name="brennwert" type="int"/>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="einfach"/>
+										<xs:enumeration value="normal"/>
+										<xs:enumeration value="schwer"/>
+									</xs:restriction>
+								</xs:simpleType>
+							<a:element name="brennwert" type="a:integer"/>
 							<a:element name="anleitung" type="a:string"/>
 						</a:sequence>
 					</a:complexType>
 				</a:element>
 				<a:element name="zutaten" type="a:string">
-					<a:complexType>
+					<a:simpleType>
 						<a:sequence>
 							<a:element name="zutat" type="a:string">
 								<a:complexType>
 									<a:sequence>
 										<a:element name="einheit" type="a:string"/>
-										<a:element name="menge" type="a:int"/>
-										<a:element name="name" type="string"/> 
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:enumeration value="stück"/>
+													<xs:enumeration value="gramm"/>
+													<xs:enumeration value="pfund"/>
+													<xs:enumeration value="pfund"/>
+													<xs:enumeration value="pfund"/>
+												</xs:restriction>
+											</xs:simpleType>
+										<a:element name="menge" type="a:integer"/>
+										<a:element name="name" type="a:string"/> 
 										<!-- ist der name ein element? -->
 									</a:sequence>
 								</a:complexType>
 							</a:element>
 						</a:sequence>
-					</a:complexType>
+					</a:simpleType>
 				</a:element>
 				<a:element name="comments" type="a:string">
 					<a:complexType>
