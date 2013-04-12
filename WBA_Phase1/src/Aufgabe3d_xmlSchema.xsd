@@ -49,9 +49,10 @@
 												<xs:restriction base="xs:string">
 													<xs:enumeration value="stück"/>
 													<xs:enumeration value="gramm"/>
+													<xs:enumeration value="g"/>
 													<xs:enumeration value="pfund"/>
-													<xs:enumeration value="pfund"/>
-													<xs:enumeration value="pfund"/>
+													<xs:enumeration value="TL"/>
+													<xs:enumeration value="Pkt."/>
 												</xs:restriction>
 											</xs:simpleType>
 										<a:element name="menge" type="a:integer"/>
