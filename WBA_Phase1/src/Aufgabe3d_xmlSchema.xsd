@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <a:schema attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0" xmlns:a="http://www.w3.org/2001/XMLSchema">
-	<a:element name="rezepte" type="a:string">	
+	<a:element name="rezepte">	
 		<a:complexType>
 			<a:sequence>
-				<a:element name="rezept" type="a:string" maxOccurs="unbounded">
+				<a:element name="rezept" maxOccurs="unbounded">
 					<a:complexType>
 						<a:sequence>
-							<a:element name="kuchenname" type="a:string"></a:element>
-							<a:element name="bilder" type="a:string">
+							<a:element name="kuchenname"></a:element>
+							<a:element name="bilder">
 								<a:complexType>
 									<a:sequence>
-										<a:element name="bild" type="a:string" maxOccurs="unbounded">
+										<a:element name="bild" maxOccurs="unbounded">
 											<a:complexType>
 												<a:sequence>
 													<a:element name="bild_id" type="a:integer"/>
@@ -22,27 +22,28 @@
 									</a:sequence>
 								</a:complexType>
 							</a:element>
-							<a:element name="zubereitung" type="a:string">
+							<a:element name="zubereitung">
 								<a:complexType>
 									<a:sequence>
-										<a:element name="schwierigkeit" type="schwierigkeitType"/>
-											<a:simpleType name="schwierigkeitType">
+										<a:element name="schwierigkeit">
+											<a:simpleType>
 												<a:restriction base="a:string">
 													<a:enumeration value="einfach"/>
 													<a:enumeration value="normal"/>
 													<a:enumeration value="schwer"/>
 												</a:restriction>
 											</a:simpleType>
+										</a:element>
 										<a:element name="zeit" type="a:string"/>
 										<a:element name="brennwert" type="a:integer"/>
 										<a:element name="anleitung" type="a:string"/>
 									</a:sequence>
 								</a:complexType>
 							</a:element>
-							<a:element name="zutaten" type="a:string">
+							<a:element name="zutaten">
 								<a:complexType>
 									<a:sequence>
-										<a:element name="zutat" type="a:string">
+										<a:element name="zutat">
 											<a:complexType>
 												<a:sequence>
 													<a:element name="einheit" type="a:string"/>
@@ -54,10 +55,10 @@
 									</a:sequence>
 								</a:complexType>
 							</a:element>
-							<a:element name="comments" type="a:string">
+							<a:element name="comments">
 								<a:complexType>
 									<a:sequence>
-										<a:element name="comment" type="a:string" maxOccurs="unbounded">
+										<a:element name="comment" maxOccurs="unbounded">
 											<a:complexType>
 												<a:sequence>
 													<a:element name="user" type="a:QName"/>
