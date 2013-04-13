@@ -17,19 +17,25 @@
     </zubereitung>
     <zutaten>
       <zutat>
-        <einheit>str1234</einheit>
-        <menge>1234</menge>
-        <name>zutat1</name>
+        <einheit>g</einheit>
+        <menge>500</menge>
+        <name>mehl</name>
       </zutat>
       <zutat>
-        <einheit>str1234</einheit>
-        <menge>1234</menge>
-        <name>zutat2</name>
+        <einheit>Stk.</einheit>
+        <menge>4</menge>
+        <name>Eier</name>
       </zutat>
     </zutaten>
     <comments>
       <comment>
-        <user>???</user>
+        <user>User1</user>
+        <user_pic>http://www.xsd2xml.com</user_pic>
+        <datum>2012-12-13T12:12:12</datum>
+        <kommentar>str1234</kommentar>
+      </comment>
+      <comment>
+        <user>User2</user>
         <user_pic>http://www.xsd2xml.com</user_pic>
         <datum>2012-12-13T12:12:12</datum>
         <kommentar>str1234</kommentar>
@@ -61,7 +67,13 @@
     </zutaten>
     <comments>
       <comment>
-        <user>???</user>
+        <user>User1</user>
+        <user_pic>http://www.xsd2xml.com</user_pic>
+        <datum>2012-12-13T12:12:12</datum>
+        <kommentar>str1234</kommentar>
+      </comment>
+      <comment>
+        <user>User2</user>
         <user_pic>http://www.xsd2xml.com</user_pic>
         <datum>2012-12-13T12:12:12</datum>
         <kommentar>str1234</kommentar>
