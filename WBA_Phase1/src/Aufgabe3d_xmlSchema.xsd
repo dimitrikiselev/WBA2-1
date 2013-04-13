@@ -6,7 +6,7 @@
 				<a:element name="rezept" maxOccurs="unbounded">
 					<a:complexType>
 						<a:sequence>
-							<a:element name="kuchenname"></a:element>
+							<a:element name="rezeptname" type="a:string"></a:element>
 							<a:element name="bilder">
 								<a:complexType>
 									<a:sequence>
@@ -43,7 +43,7 @@
 							<a:element name="zutaten">
 								<a:complexType>
 									<a:sequence>
-										<a:element name="zutat">
+										<a:element name="zutat" maxOccurs="unbounded">
 											<a:complexType>
 												<a:sequence>
 													<a:element name="einheit" type="a:string"/>
