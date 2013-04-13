@@ -22,9 +22,9 @@
 				<zutat einheit="g" menge="200">Zucker</zutat>
 				<zutat einheit="g" menge="200"><link src="http://www.chefkoch.de/magazin/artikel/105,0/Chefkoch/Schokolade.html">Schokolade, Blockschokolade</link></zutat>
 				<zutat einheit="g" menge="120">Mehl</zutat>
-				<zutat einheit="tl" menge="1/2"></zutat>
-				<zutat einheit="pkt" menge="1"></zutat>
-				<zutat einheit="stck" menge="4"><link src="http://www.chefkoch.de/magazin/artikel/908,0/Chefkoch/Das-Ei-der-heimliche-Kuechenstar-im-Rampenlicht.html"></link></zutat>
+				<zutat einheit="tl" menge="1/2">Backpulver</zutat>
+				<zutat einheit="pkt" menge="1">Vanillezucker</zutat>
+				<zutat einheit="stck" menge="4">Eier<link src="http://www.chefkoch.de/magazin/artikel/908,0/Chefkoch/Das-Ei-der-heimliche-Kuechenstar-im-Rampenlicht.html"></link></zutat>
 			</zutaten>
 	
 	

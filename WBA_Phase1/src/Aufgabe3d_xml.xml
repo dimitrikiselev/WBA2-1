@@ -1,44 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <rezepte>
     <rezept>
-        <rezeptname>Rezept1</rezeptname>
+        <rezeptname>Lenchen’s Schokoladenkuchen</rezeptname>
         <bilder>
             <bild>
-                <bild_id>1234</bild_id>
-                <user>User1</user>
-                <link>http://www.xsd2xml.com</link>
+                <bild_id>1</bild_id>
+                <user>Pantera81</user>
+                <link>http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/96612-960x720-lenchen-s-schokoladenkuchen.jpg</link>
             </bild>
         </bilder>
         <zubereitung>
             <schwierigkeit>einfach</schwierigkeit>
-            <zeit>str1234</zeit>
-            <brennwert>1234</brennwert>
-            <anleitung>str1234</anleitung>
+            <zeit>1std</zeit>
+            <brennwert>200 </brennwert>
+            <anleitung>Butter und Schokolade im Wasserbad schmelzen. Eier trennen. Eiweiß steif schlagen. 
+Eigelbe, Zucker und Vanillezucker verrühren. Geschmolzene Butter-Schokomasse hinzufügen und mischen. 
+Mehl mit dem Backpulver in die Masse sieben und zum Schluss die steifen Eiweiße vorsichtig 
+unterheben. In eine gut gefettete Form geben. Bei 180°Grad 40 – 50 Minuten backen. </anleitung>
         </zubereitung>
         <zutaten>
             <zutat>
                 <einheit>g</einheit>
-                <menge>500</menge>
-                <name>mehl</name>
+                <menge>200</menge>
+                <name>Butter</name>
             </zutat>
             <zutat>
-                <einheit>Stk.</einheit>
-                <menge>4</menge>
-                <name>Eier</name>
+                <einheit>g.</einheit>
+                <menge>200</menge>
+                <name>Zucker</name>
+            </zutat>
+            <zutat>
+                <einheit>g.</einheit>
+                <menge>120</menge>
+                <name>Mehl</name>
+            </zutat>
+            <zutat>
+                <einheit>g.</einheit>
+                <menge>200</menge>
+                <name>Zucker</name>
+            </zutat>
+            <zutat>
+                <einheit>TL.</einheit>
+                <menge>2</menge>
+                <name>Backpulver</name>
+            </zutat>
+            <zutat>
+                <einheit>Pck.</einheit>
+                <menge>1</menge>
+                <name>Vanillezucker</name>
             </zutat>
         </zutaten>
         <comments>
             <comment>
-                <user>User1</user>
-                <user_pic>http://www.xsd2xml.com</user_pic>
+                <user>Bella1337</user>
+                <user_pic>https://static.3dsupply.de/temp/tmc_images/1133_1335445813.0_None_False_False_True__524_389.png</user_pic>
                 <datum>2012-12-13T12:12:12</datum>
-                <kommentar>str1234</kommentar>
+                <kommentar>Außergewöhnlicher Kuchen, schmeckt sehr gut aber auch sehr deftig.</kommentar>
             </comment>
             <comment>
-                <user>User2</user>
-                <user_pic>http://www.xsd2xml.com</user_pic>
+                <user>Molok</user>
+                <user_pic>https://static.3dsupply.de/temp/tmc_images/1133_1335445813.0_None_False_False_True__524_389.png</user_pic>
                 <datum>2012-12-13T12:12:12</datum>
-                <kommentar>str1234</kommentar>
+                <kommentar>Habe den Kuchen heute gebacken!!!! aber mit kleiner Abwandlung: das Rezept verdoppelt für ein Backblech,nur 150g Zucker(pro Rezept) ,Schokolade jegl.Art von Weihnachten.(Trüffelsterne mit Weihn.Aroma,Schokomänner...)und das Ganze bei 150°C Umluft für 30min in den Ofen. Die Ganze Wohnung riecht superlecker nach Schokolade und alle Kinder standen Schlange.Einfach genial.DANKE </kommentar>
             </comment>
             <comment>
                 <user>Hans</user>
@@ -50,56 +73,315 @@
                 <user>Anna</user>
                 <user_pic>http://www.clemson.edu/ethics/no_photo_male.jpg</user_pic>
                 <datum>2013-04-13T22:44:07.743+02:00</datum>
-                <kommentar>Ich bin dumm</kommentar>
+                <kommentar>unglaublich lecker !!! Ich backe den Kuchen heute zum 2. Mal, weil er soooo lecker war. Ich hatte Himbeeren (TK-aufgetaut) und halb-steif geschlagene Sahne dazu. Super! </kommentar>
             </comment>
         </comments>
     </rezept>
     <rezept>
-        <rezeptname>Rezept2</rezeptname>
+        <rezeptname>Leckerer Schokoladenkuchen</rezeptname>
         <bilder>
             <bild>
-                <bild_id>1234</bild_id>
-                <user>User1</user>
-                <link>http://www.xsd2xml.com</link>
+                <bild_id>1</bild_id>
+                <user>Pantera81</user>
+                <link>http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/96612-960x720-lenchen-s-schokoladenkuchen.jpg</link>
             </bild>
         </bilder>
         <zubereitung>
             <schwierigkeit>einfach</schwierigkeit>
-            <zeit>str1234</zeit>
-            <brennwert>1234</brennwert>
-            <anleitung>str1234</anleitung>
+            <zeit>1std</zeit>
+            <brennwert>200 </brennwert>
+            <anleitung>Butter und Schokolade im Wasserbad schmelzen. Eier trennen. Eiweiß steif schlagen. 
+Eigelbe, Zucker und Vanillezucker verrühren. Geschmolzene Butter-Schokomasse hinzufügen und mischen. 
+Mehl mit dem Backpulver in die Masse sieben und zum Schluss die steifen Eiweiße vorsichtig 
+unterheben. In eine gut gefettete Form geben. Bei 180°Grad 40 – 50 Minuten backen. </anleitung>
         </zubereitung>
         <zutaten>
             <zutat>
-                <einheit>str1234</einheit>
-                <menge>1234</menge>
-                <name>str1234</name>
+                <einheit>g</einheit>
+                <menge>200</menge>
+                <name>Butter</name>
+            </zutat>
+            <zutat>
+                <einheit>g.</einheit>
+                <menge>200</menge>
+                <name>Zucker</name>
+            </zutat>
+            <zutat>
+                <einheit>g.</einheit>
+                <menge>120</menge>
+                <name>Mehl</name>
+            </zutat>
+            <zutat>
+                <einheit>g.</einheit>
+                <menge>200</menge>
+                <name>Zucker</name>
+            </zutat>
+            <zutat>
+                <einheit>TL.</einheit>
+                <menge>2</menge>
+                <name>Backpulver</name>
+            </zutat>
+            <zutat>
+                <einheit>Pck.</einheit>
+                <menge>1</menge>
+                <name>Vanillezucker</name>
             </zutat>
         </zutaten>
         <comments>
             <comment>
-                <user>User1</user>
-                <user_pic>http://www.xsd2xml.com</user_pic>
+                <user>Bella1337</user>
+                <user_pic>https://static.3dsupply.de/temp/tmc_images/1133_1335445813.0_None_False_False_True__524_389.png</user_pic>
                 <datum>2012-12-13T12:12:12</datum>
-                <kommentar>str1234</kommentar>
+                <kommentar>Außergewöhnlicher Kuchen, schmeckt sehr gut aber auch sehr deftig.</kommentar>
             </comment>
             <comment>
-                <user>User2</user>
-                <user_pic>http://www.xsd2xml.com</user_pic>
+                <user>Molok</user>
+                <user_pic>https://static.3dsupply.de/temp/tmc_images/1133_1335445813.0_None_False_False_True__524_389.png</user_pic>
                 <datum>2012-12-13T12:12:12</datum>
-                <kommentar>str1234</kommentar>
+                <kommentar>Habe den Kuchen heute gebacken!!!! aber mit kleiner Abwandlung: das Rezept verdoppelt für ein Backblech,nur 150g Zucker(pro Rezept) ,Schokolade jegl.Art von Weihnachten.(Trüffelsterne mit Weihn.Aroma,Schokomänner...)und das Ganze bei 150°C Umluft für 30min in den Ofen. Die Ganze Wohnung riecht superlecker nach Schokolade und alle Kinder standen Schlange.Einfach genial.DANKE </kommentar>
             </comment>
             <comment>
-                <user>Test</user>
+                <user>Hans</user>
                 <user_pic>http://www.clemson.edu/ethics/no_photo_male.jpg</user_pic>
-                <datum>2013-04-13T22:39:36.608+02:00</datum>
-                <kommentar>SUPPI</kommentar>
+                <datum>2013-04-13T22:35:40.643+02:00</datum>
+                <kommentar>Tolles Rezept!</kommentar>
             </comment>
             <comment>
-                <user>HannesPetrter</user>
+                <user>Anna</user>
                 <user_pic>http://www.clemson.edu/ethics/no_photo_male.jpg</user_pic>
-                <datum>2013-04-13T22:43:02.690+02:00</datum>
-                <kommentar>LULZ</kommentar>
+                <datum>2013-04-13T22:44:07.743+02:00</datum>
+                <kommentar>unglaublich lecker !!! Ich backe den Kuchen heute zum 2. Mal, weil er soooo lecker war. Ich hatte Himbeeren (TK-aufgetaut) und halb-steif geschlagene Sahne dazu. Super! </kommentar>
+            </comment>
+        </comments>
+    </rezept>
+        <rezept>
+        <rezeptname>Schokoladenkuchen unglaublich lecker</rezeptname>
+        <bilder>
+            <bild>
+                <bild_id>1</bild_id>
+                <user>Pantera81</user>
+                <link>http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/96612-960x720-lenchen-s-schokoladenkuchen.jpg</link>
+            </bild>
+        </bilder>
+        <zubereitung>
+            <schwierigkeit>einfach</schwierigkeit>
+            <zeit>1std</zeit>
+            <brennwert>200 </brennwert>
+            <anleitung>Butter und Schokolade im Wasserbad schmelzen. Eier trennen. Eiweiß steif schlagen. 
+Eigelbe, Zucker und Vanillezucker verrühren. Geschmolzene Butter-Schokomasse hinzufügen und mischen. 
+Mehl mit dem Backpulver in die Masse sieben und zum Schluss die steifen Eiweiße vorsichtig 
+unterheben. In eine gut gefettete Form geben. Bei 180°Grad 40 – 50 Minuten backen. </anleitung>
+        </zubereitung>
+        <zutaten>
+            <zutat>
+                <einheit>g</einheit>
+                <menge>200</menge>
+                <name>Butter</name>
+            </zutat>
+            <zutat>
+                <einheit>g.</einheit>
+                <menge>200</menge>
+                <name>Zucker</name>
+            </zutat>
+            <zutat>
+                <einheit>g.</einheit>
+                <menge>120</menge>
+                <name>Mehl</name>
+            </zutat>
+            <zutat>
+                <einheit>g.</einheit>
+                <menge>200</menge>
+                <name>Zucker</name>
+            </zutat>
+            <zutat>
+                <einheit>TL.</einheit>
+                <menge>2</menge>
+                <name>Backpulver</name>
+            </zutat>
+            <zutat>
+                <einheit>Pck.</einheit>
+                <menge>1</menge>
+                <name>Vanillezucker</name>
+            </zutat>
+        </zutaten>
+        <comments>
+            <comment>
+                <user>Bella1337</user>
+                <user_pic>https://static.3dsupply.de/temp/tmc_images/1133_1335445813.0_None_False_False_True__524_389.png</user_pic>
+                <datum>2012-12-13T12:12:12</datum>
+                <kommentar>Außergewöhnlicher Kuchen, schmeckt sehr gut aber auch sehr deftig.</kommentar>
+            </comment>
+            <comment>
+                <user>Molok</user>
+                <user_pic>https://static.3dsupply.de/temp/tmc_images/1133_1335445813.0_None_False_False_True__524_389.png</user_pic>
+                <datum>2012-12-13T12:12:12</datum>
+                <kommentar>Habe den Kuchen heute gebacken!!!! aber mit kleiner Abwandlung: das Rezept verdoppelt für ein Backblech,nur 150g Zucker(pro Rezept) ,Schokolade jegl.Art von Weihnachten.(Trüffelsterne mit Weihn.Aroma,Schokomänner...)und das Ganze bei 150°C Umluft für 30min in den Ofen. Die Ganze Wohnung riecht superlecker nach Schokolade und alle Kinder standen Schlange.Einfach genial.DANKE </kommentar>
+            </comment>
+            <comment>
+                <user>Hans</user>
+                <user_pic>http://www.clemson.edu/ethics/no_photo_male.jpg</user_pic>
+                <datum>2013-04-13T22:35:40.643+02:00</datum>
+                <kommentar>Tolles Rezept!</kommentar>
+            </comment>
+            <comment>
+                <user>Anna</user>
+                <user_pic>http://www.clemson.edu/ethics/no_photo_male.jpg</user_pic>
+                <datum>2013-04-13T22:44:07.743+02:00</datum>
+                <kommentar>unglaublich lecker !!! Ich backe den Kuchen heute zum 2. Mal, weil er soooo lecker war. Ich hatte Himbeeren (TK-aufgetaut) und halb-steif geschlagene Sahne dazu. Super! </kommentar>
+            </comment>
+        </comments>
+    </rezept>
+        <rezept>
+        <rezeptname>Schokokuchen</rezeptname>
+        <bilder>
+            <bild>
+                <bild_id>1</bild_id>
+                <user>Pantera81</user>
+                <link>http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/96612-960x720-lenchen-s-schokoladenkuchen.jpg</link>
+            </bild>
+        </bilder>
+        <zubereitung>
+            <schwierigkeit>einfach</schwierigkeit>
+            <zeit>1std</zeit>
+            <brennwert>200 </brennwert>
+            <anleitung>Butter und Schokolade im Wasserbad schmelzen. Eier trennen. Eiweiß steif schlagen. 
+Eigelbe, Zucker und Vanillezucker verrühren. Geschmolzene Butter-Schokomasse hinzufügen und mischen. 
+Mehl mit dem Backpulver in die Masse sieben und zum Schluss die steifen Eiweiße vorsichtig 
+unterheben. In eine gut gefettete Form geben. Bei 180°Grad 40 – 50 Minuten backen. </anleitung>
+        </zubereitung>
+        <zutaten>
+            <zutat>
+                <einheit>g</einheit>
+                <menge>200</menge>
+                <name>Butter</name>
+            </zutat>
+            <zutat>
+                <einheit>g.</einheit>
+                <menge>200</menge>
+                <name>Zucker</name>
+            </zutat>
+            <zutat>
+                <einheit>g.</einheit>
+                <menge>120</menge>
+                <name>Mehl</name>
+            </zutat>
+            <zutat>
+                <einheit>g.</einheit>
+                <menge>200</menge>
+                <name>Zucker</name>
+            </zutat>
+            <zutat>
+                <einheit>TL.</einheit>
+                <menge>2</menge>
+                <name>Backpulver</name>
+            </zutat>
+            <zutat>
+                <einheit>Pck.</einheit>
+                <menge>1</menge>
+                <name>Vanillezucker</name>
+            </zutat>
+        </zutaten>
+        <comments>
+            <comment>
+                <user>Bella1337</user>
+                <user_pic>https://static.3dsupply.de/temp/tmc_images/1133_1335445813.0_None_False_False_True__524_389.png</user_pic>
+                <datum>2012-12-13T12:12:12</datum>
+                <kommentar>Außergewöhnlicher Kuchen, schmeckt sehr gut aber auch sehr deftig.</kommentar>
+            </comment>
+            <comment>
+                <user>Molok</user>
+                <user_pic>https://static.3dsupply.de/temp/tmc_images/1133_1335445813.0_None_False_False_True__524_389.png</user_pic>
+                <datum>2012-12-13T12:12:12</datum>
+                <kommentar>Habe den Kuchen heute gebacken!!!! aber mit kleiner Abwandlung: das Rezept verdoppelt für ein Backblech,nur 150g Zucker(pro Rezept) ,Schokolade jegl.Art von Weihnachten.(Trüffelsterne mit Weihn.Aroma,Schokomänner...)und das Ganze bei 150°C Umluft für 30min in den Ofen. Die Ganze Wohnung riecht superlecker nach Schokolade und alle Kinder standen Schlange.Einfach genial.DANKE </kommentar>
+            </comment>
+            <comment>
+                <user>Hans</user>
+                <user_pic>http://www.clemson.edu/ethics/no_photo_male.jpg</user_pic>
+                <datum>2013-04-13T22:35:40.643+02:00</datum>
+                <kommentar>Tolles Rezept!</kommentar>
+            </comment>
+            <comment>
+                <user>Anna</user>
+                <user_pic>http://www.clemson.edu/ethics/no_photo_male.jpg</user_pic>
+                <datum>2013-04-13T22:44:07.743+02:00</datum>
+                <kommentar>unglaublich lecker !!! Ich backe den Kuchen heute zum 2. Mal, weil er soooo lecker war. Ich hatte Himbeeren (TK-aufgetaut) und halb-steif geschlagene Sahne dazu. Super! </kommentar>
+            </comment>
+        </comments>
+    </rezept>
+        <rezept>
+        <rezeptname>Knack und Back Schokoladenkuchen</rezeptname>
+        <bilder>
+            <bild>
+                <bild_id>1</bild_id>
+                <user>Pantera81</user>
+                <link>http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/96612-960x720-lenchen-s-schokoladenkuchen.jpg</link>
+            </bild>
+        </bilder>
+        <zubereitung>
+            <schwierigkeit>einfach</schwierigkeit>
+            <zeit>1std</zeit>
+            <brennwert>200 </brennwert>
+            <anleitung>Butter und Schokolade im Wasserbad schmelzen. Eier trennen. Eiweiß steif schlagen. 
+Eigelbe, Zucker und Vanillezucker verrühren. Geschmolzene Butter-Schokomasse hinzufügen und mischen. 
+Mehl mit dem Backpulver in die Masse sieben und zum Schluss die steifen Eiweiße vorsichtig 
+unterheben. In eine gut gefettete Form geben. Bei 180°Grad 40 – 50 Minuten backen. </anleitung>
+        </zubereitung>
+        <zutaten>
+            <zutat>
+                <einheit>g</einheit>
+                <menge>200</menge>
+                <name>Butter</name>
+            </zutat>
+            <zutat>
+                <einheit>g.</einheit>
+                <menge>200</menge>
+                <name>Zucker</name>
+            </zutat>
+            <zutat>
+                <einheit>g.</einheit>
+                <menge>120</menge>
+                <name>Mehl</name>
+            </zutat>
+            <zutat>
+                <einheit>g.</einheit>
+                <menge>200</menge>
+                <name>Zucker</name>
+            </zutat>
+            <zutat>
+                <einheit>TL.</einheit>
+                <menge>2</menge>
+                <name>Backpulver</name>
+            </zutat>
+            <zutat>
+                <einheit>Pck.</einheit>
+                <menge>1</menge>
+                <name>Vanillezucker</name>
+            </zutat>
+        </zutaten>
+        <comments>
+            <comment>
+                <user>Bella1337</user>
+                <user_pic>https://static.3dsupply.de/temp/tmc_images/1133_1335445813.0_None_False_False_True__524_389.png</user_pic>
+                <datum>2012-12-13T12:12:12</datum>
+                <kommentar>Außergewöhnlicher Kuchen, schmeckt sehr gut aber auch sehr deftig.</kommentar>
+            </comment>
+            <comment>
+                <user>Molok</user>
+                <user_pic>https://static.3dsupply.de/temp/tmc_images/1133_1335445813.0_None_False_False_True__524_389.png</user_pic>
+                <datum>2012-12-13T12:12:12</datum>
+                <kommentar>Habe den Kuchen heute gebacken!!!! aber mit kleiner Abwandlung: das Rezept verdoppelt für ein Backblech,nur 150g Zucker(pro Rezept) ,Schokolade jegl.Art von Weihnachten.(Trüffelsterne mit Weihn.Aroma,Schokomänner...)und das Ganze bei 150°C Umluft für 30min in den Ofen. Die Ganze Wohnung riecht superlecker nach Schokolade und alle Kinder standen Schlange.Einfach genial.DANKE </kommentar>
+            </comment>
+            <comment>
+                <user>Hans</user>
+                <user_pic>http://www.clemson.edu/ethics/no_photo_male.jpg</user_pic>
+                <datum>2013-04-13T22:35:40.643+02:00</datum>
+                <kommentar>Tolles Rezept!</kommentar>
+            </comment>
+            <comment>
+                <user>Anna</user>
+                <user_pic>http://www.clemson.edu/ethics/no_photo_male.jpg</user_pic>
+                <datum>2013-04-13T22:44:07.743+02:00</datum>
+                <kommentar>unglaublich lecker !!! Ich backe den Kuchen heute zum 2. Mal, weil er soooo lecker war. Ich hatte Himbeeren (TK-aufgetaut) und halb-steif geschlagene Sahne dazu. Super! </kommentar>
             </comment>
         </comments>
     </rezept>

@@ -43,7 +43,7 @@ public class Aufgabe4 {
 		
 		do {
 			for(int i=0; i<1; i++){
-				System.out.println("Wählen Sie die Nummer Ihres gewünschten Rezeptes.");
+				System.out.println("Wählen Sie die Nummer Ihres gewünschten Rezeptes. \n\n");
 					aufgabe.auflistung();
 		
 					int a = in.nextInt();
@@ -101,7 +101,7 @@ public class Aufgabe4 {
 	
 	public  void auflistung() throws JAXBException {
 		for(int i = 0; i < this.rezepte.getRezept().size(); i++){
-			System.out.println(this.rezepte.getRezept().get(i).getRezeptname() + "........." + i);
+			System.out.println(i + "..............." + this.rezepte.getRezept().get(i).getRezeptname());
 		}	
 	}
 
@@ -109,7 +109,7 @@ public class Aufgabe4 {
 			
 		Rezept rezept = this.rezepte.getRezept().get(index);
 			
-		System.out.println(rezept.getRezeptname() + "\n");
+		System.out.println("\n\n" + rezept.getRezeptname() + "\n");
 		
 		System.out.println("Bild Nummer" + rezept.getBilder().getBild().get(0).getBildId());
 		System.out.println(rezept.getBilder().getBild().get(0).getLink());
@@ -122,7 +122,7 @@ public class Aufgabe4 {
 			
 		System.out.println("\n" + "Arbeitszeit: " + rezept.getZubereitung().getZeit());
 		System.out.println("Schwierigkeitsgrad: " + rezept.getZubereitung().getSchwierigkeit());
-		System.out.println("Brennwert: " + rezept.getZubereitung().getBrennwert());
+		System.out.println("Brennwert: " + rezept.getZubereitung().getBrennwert() + "kcal");
 		System.out.println("Zubereitung: " + rezept.getZubereitung().getAnleitung() + "\n\n");
 	}
 	
