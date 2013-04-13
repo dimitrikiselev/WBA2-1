@@ -10,11 +10,11 @@
 							<a:element name="bilder">
 								<a:complexType>
 									<a:sequence>
-										<a:element name="bild" maxOccurs="unbounded">
+										<a:element name="bild" minOccurs="0" maxOccurs="unbounded">
 											<a:complexType>
 												<a:sequence>
 													<a:element name="bild_id" type="a:integer"/>
-													<a:element name="user" type="a:QName"/>
+													<a:element name="user" type="a:string"/>
 													<a:element name="link" type="a:anyURI"/>
 												</a:sequence>
 											</a:complexType>
@@ -61,9 +61,9 @@
 										<a:element name="comment" maxOccurs="unbounded">
 											<a:complexType>
 												<a:sequence>
-													<a:element name="user" type="a:QName"/>
-													<a:element name="user_pic" type="a:anyURI"/>
-													<a:element name="datum" type="a:dateTime"/>
+													<a:element name="user" type="a:string"/>
+													<a:element name="user_pic" type="a:anyURI" minOccurs="0"/>
+													<a:element name="datum" type="a:dateTime" minOccurs="0"/>
 													<a:element name="kommentar" type="a:string"/>
 												</a:sequence>
 											</a:complexType>

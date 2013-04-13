@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.6 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2013.04.13 um 05:51:00 PM CEST 
+// Generiert: 2013.04.13 um 09:15:11 PM CEST 
 //
 
 
@@ -18,7 +18,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
-import javax.xml.namespace.QName;
 
 
 /**
@@ -42,13 +41,13 @@ import javax.xml.namespace.QName;
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                           &lt;sequence>
- *                             &lt;element name="bild" maxOccurs="unbounded">
+ *                             &lt;element name="bild" maxOccurs="unbounded" minOccurs="0">
  *                               &lt;complexType>
  *                                 &lt;complexContent>
  *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                                     &lt;sequence>
  *                                       &lt;element name="bild_id" type="{http://www.w3.org/2001/XMLSchema}integer"/>
- *                                       &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}QName"/>
+ *                                       &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                                       &lt;element name="link" type="{http://www.w3.org/2001/XMLSchema}anyURI"/>
  *                                     &lt;/sequence>
  *                                   &lt;/restriction>
@@ -115,9 +114,9 @@ import javax.xml.namespace.QName;
  *                                 &lt;complexContent>
  *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                                     &lt;sequence>
- *                                       &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}QName"/>
- *                                       &lt;element name="user_pic" type="{http://www.w3.org/2001/XMLSchema}anyURI"/>
- *                                       &lt;element name="datum" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
+ *                                       &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                                       &lt;element name="user_pic" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/>
+ *                                       &lt;element name="datum" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *                                       &lt;element name="kommentar" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                                     &lt;/sequence>
  *                                   &lt;/restriction>
@@ -198,13 +197,13 @@ public class Rezepte {
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                 &lt;sequence>
-     *                   &lt;element name="bild" maxOccurs="unbounded">
+     *                   &lt;element name="bild" maxOccurs="unbounded" minOccurs="0">
      *                     &lt;complexType>
      *                       &lt;complexContent>
      *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                           &lt;sequence>
      *                             &lt;element name="bild_id" type="{http://www.w3.org/2001/XMLSchema}integer"/>
-     *                             &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}QName"/>
+     *                             &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *                             &lt;element name="link" type="{http://www.w3.org/2001/XMLSchema}anyURI"/>
      *                           &lt;/sequence>
      *                         &lt;/restriction>
@@ -271,9 +270,9 @@ public class Rezepte {
      *                       &lt;complexContent>
      *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                           &lt;sequence>
-     *                             &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}QName"/>
-     *                             &lt;element name="user_pic" type="{http://www.w3.org/2001/XMLSchema}anyURI"/>
-     *                             &lt;element name="datum" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
+     *                             &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *                             &lt;element name="user_pic" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/>
+     *                             &lt;element name="datum" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
      *                             &lt;element name="kommentar" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *                           &lt;/sequence>
      *                         &lt;/restriction>
@@ -445,13 +444,13 @@ public class Rezepte {
          *   &lt;complexContent>
          *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *       &lt;sequence>
-         *         &lt;element name="bild" maxOccurs="unbounded">
+         *         &lt;element name="bild" maxOccurs="unbounded" minOccurs="0">
          *           &lt;complexType>
          *             &lt;complexContent>
          *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *                 &lt;sequence>
          *                   &lt;element name="bild_id" type="{http://www.w3.org/2001/XMLSchema}integer"/>
-         *                   &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}QName"/>
+         *                   &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}string"/>
          *                   &lt;element name="link" type="{http://www.w3.org/2001/XMLSchema}anyURI"/>
          *                 &lt;/sequence>
          *               &lt;/restriction>
@@ -472,7 +471,6 @@ public class Rezepte {
         })
         public static class Bilder {
 
-            @XmlElement(required = true)
             protected List<Rezepte.Rezept.Bilder.Bild> bild;
 
             /**
@@ -516,7 +514,7 @@ public class Rezepte {
              *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
              *       &lt;sequence>
              *         &lt;element name="bild_id" type="{http://www.w3.org/2001/XMLSchema}integer"/>
-             *         &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}QName"/>
+             *         &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}string"/>
              *         &lt;element name="link" type="{http://www.w3.org/2001/XMLSchema}anyURI"/>
              *       &lt;/sequence>
              *     &lt;/restriction>
@@ -537,7 +535,7 @@ public class Rezepte {
                 @XmlElement(name = "bild_id", required = true)
                 protected BigInteger bildId;
                 @XmlElement(required = true)
-                protected QName user;
+                protected String user;
                 @XmlElement(required = true)
                 @XmlSchemaType(name = "anyURI")
                 protected String link;
@@ -571,10 +569,10 @@ public class Rezepte {
                  * 
                  * @return
                  *     possible object is
-                 *     {@link QName }
+                 *     {@link String }
                  *     
                  */
-                public QName getUser() {
+                public String getUser() {
                     return user;
                 }
 
@@ -583,10 +581,10 @@ public class Rezepte {
                  * 
                  * @param value
                  *     allowed object is
-                 *     {@link QName }
+                 *     {@link String }
                  *     
                  */
-                public void setUser(QName value) {
+                public void setUser(String value) {
                     this.user = value;
                 }
 
@@ -634,9 +632,9 @@ public class Rezepte {
          *             &lt;complexContent>
          *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *                 &lt;sequence>
-         *                   &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}QName"/>
-         *                   &lt;element name="user_pic" type="{http://www.w3.org/2001/XMLSchema}anyURI"/>
-         *                   &lt;element name="datum" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
+         *                   &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         *                   &lt;element name="user_pic" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/>
+         *                   &lt;element name="datum" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
          *                   &lt;element name="kommentar" type="{http://www.w3.org/2001/XMLSchema}string"/>
          *                 &lt;/sequence>
          *               &lt;/restriction>
@@ -700,9 +698,9 @@ public class Rezepte {
              *   &lt;complexContent>
              *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
              *       &lt;sequence>
-             *         &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}QName"/>
-             *         &lt;element name="user_pic" type="{http://www.w3.org/2001/XMLSchema}anyURI"/>
-             *         &lt;element name="datum" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
+             *         &lt;element name="user" type="{http://www.w3.org/2001/XMLSchema}string"/>
+             *         &lt;element name="user_pic" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/>
+             *         &lt;element name="datum" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
              *         &lt;element name="kommentar" type="{http://www.w3.org/2001/XMLSchema}string"/>
              *       &lt;/sequence>
              *     &lt;/restriction>
@@ -722,11 +720,10 @@ public class Rezepte {
             public static class Comment {
 
                 @XmlElement(required = true)
-                protected QName user;
-                @XmlElement(name = "user_pic", required = true)
+                protected String user;
+                @XmlElement(name = "user_pic")
                 @XmlSchemaType(name = "anyURI")
                 protected String userPic;
-                @XmlElement(required = true)
                 @XmlSchemaType(name = "dateTime")
                 protected XMLGregorianCalendar datum;
                 @XmlElement(required = true)
@@ -737,10 +734,10 @@ public class Rezepte {
                  * 
                  * @return
                  *     possible object is
-                 *     {@link QName }
+                 *     {@link String }
                  *     
                  */
-                public QName getUser() {
+                public String getUser() {
                     return user;
                 }
 
@@ -749,10 +746,10 @@ public class Rezepte {
                  * 
                  * @param value
                  *     allowed object is
-                 *     {@link QName }
+                 *     {@link String }
                  *     
                  */
-                public void setUser(QName value) {
+                public void setUser(String value) {
                     this.user = value;
                 }
 
