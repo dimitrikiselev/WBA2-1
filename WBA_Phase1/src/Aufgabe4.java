@@ -18,110 +18,126 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class Aufgabe4 {
 	
 	public static int index = 0;
+	private Unmarshaller unmarshaller;
+	private Marshaller marshaller;
+	private final String XMLFILE = "src/Aufgabe3d_xml.xml";
+	private Rezepte rezepte;
+	
+	
+	public Aufgabe4(Marshaller marshaller, Unmarshaller unmarshaller) throws JAXBException {
+		this.unmarshaller = unmarshaller;
+		this.marshaller = marshaller;
+		this.rezepte = (Rezepte) unmarshaller.unmarshal(new File(XMLFILE));
+	}
+	
 
-	public static void main(String[] args) throws JAXBException{
+	public static void main(String[] args) throws JAXBException {
+		JAXBContext context = JAXBContext.newInstance("generated");
+		Marshaller marshaller = context.createMarshaller();
+		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+		Unmarshaller unmarshaller = context.createUnmarshaller();
+		
+		Aufgabe4 aufgabe = new Aufgabe4(marshaller, unmarshaller);	
 		
 		Scanner in = new Scanner(System.in);
 		
-		do{
+		do {
 			for(int i=0; i<1; i++){
 				System.out.println("Wählen Sie die Nummer Ihres gewünschten Rezeptes.");
-					auflistung();
+					aufgabe.auflistung();
 		
 					int a = in.nextInt();
-						infos(a); 
-						kommentare(a);
+						aufgabe.infos(a); 
+						aufgabe.kommentare(a);
 				System.out.println("\n\n");
 				System.out.println("Wenn sie Kommetare hinzufügen wollen, wählen sie: \t 1");
 				System.out.println("Wenn Sie ein anderes Rezept wählen wollen wählen sie: \t 2");
 				System.out.println("Wenn Sie das Programm beenden wollen wählen sie: \t 3");
 
 				int tmp = in.nextInt();
-				if(tmp == 1) kommentieren(a);
+				if(tmp == 1) aufgabe.kommentieren(a);
 				if(tmp == 3) System.exit(-1);
+
 			} 
  
 		}
-		
 		while(index != 1);	
 	}
 		
 
 				
-private static void kommentieren(int i) throws JAXBException{
-	Scanner in = new Scanner(System.in);
-	
-	System.out.println("Geben Sie jetzt Ihren Usernamen ein.");
-	String user = in.nextLine();
-	System.out.println("Geben Sie jetzt Ihren Kommentar ein.");
-	String text = in.nextLine();
-	
-	Comment neuescomment = new Comment();
-	
-	neuescomment.setUser(user);
-	neuescomment.setKommentar(text);
-	
-	getRezepte().getRezept().get(i).getComments().getComment().add(neuescomment);
-	
-	JAXBContext context = JAXBContext.newInstance("generated");
-    Marshaller m = context.createMarshaller();
-    m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-    m.marshal(new ObjectFactory().createRezepte(), new File("src/Aufgabe3d_xml.xml"));
+	public void kommentieren(int i) throws JAXBException{
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("Geben Sie jetzt Ihren Usernamen ein.");
+		String user = in.nextLine();
+		System.out.println("Geben Sie jetzt Ihren Kommentar ein.");
+		String text = in.nextLine();
+		
+		Comment neuescomment = new Comment();
+		
+		neuescomment.setUser(user);
+		neuescomment.setKommentar(text);
+		neuescomment.setUserPic("http://www.clemson.edu/ethics/no_photo_male.jpg");
+		
+		try{		
+			GregorianCalendar cal = new GregorianCalendar();
+			cal.setTime(new Date());
+			XMLGregorianCalendar newCal = DatatypeFactory.newInstance().newXMLGregorianCalendar(cal);
+			neuescomment.setDatum(newCal);
+		} catch(DatatypeConfigurationException e) {
+			e.printStackTrace();
+			
+		}
+		
+		
+		this.rezepte.getRezept().get(i).getComments().getComment().add(neuescomment);
+	    this.marshaller.marshal(this.rezepte, new File(XMLFILE));
+	    
+	    this.infos(i);
+	    this.kommentare(i);
+	}
 
 	
-}
+	public  void auflistung() throws JAXBException {
+		for(int i = 0; i < this.rezepte.getRezept().size(); i++){
+			System.out.println(this.rezepte.getRezept().get(i).getRezeptname() + "........." + i);
+		}	
+	}
 
-	
-private static void auflistung() throws JAXBException{
-	
-	for(int i = 0; i < getRezepte().getRezept().size(); i++){
-		System.out.println(getRezepte().getRezept().get(i).getRezeptname() + "........." + i);
-	}	
-}
-
-private static void infos(int i) throws JAXBException{
+	public void infos(int index) throws JAXBException{
+			
+		Rezept rezept = this.rezepte.getRezept().get(index);
+			
+		System.out.println(rezept.getRezeptname() + "\n");
 		
-	Rezept r = getRezepte().getRezept().get(i);
-		
-		System.out.println(getRezepte().getRezept().get(i).getRezeptname() + "\n");
-		
-		System.out.println("Bild Nummer" + r.getBilder().getBild().get(0).getBildId());
-		System.out.println(r.getBilder().getBild().get(0).getLink());
-		System.out.println("Gepostet von:" + r.getBilder().getBild().get(0).getUser() + "\n");
+		System.out.println("Bild Nummer" + rezept.getBilder().getBild().get(0).getBildId());
+		System.out.println(rezept.getBilder().getBild().get(0).getLink());
+		System.out.println("Gepostet von:" + rezept.getBilder().getBild().get(0).getUser() + "\n");
 		
 		int b = 1;
-		for(int a = 0; a < r.getZutaten().getZutat().size(); a++, b++){
-			System.out.println("Zutat " + b + " ist: " + r.getZutaten().getZutat().get(a).getMenge() + " " + r.getZutaten().getZutat().get(a).getEinheit() + " " + r.getZutaten().getZutat().get(a).getName());
+		for(int a = 0; a < rezept.getZutaten().getZutat().size(); a++, b++){
+			System.out.println("Zutat " + b + " ist: " + rezept.getZutaten().getZutat().get(a).getMenge() + " " + rezept.getZutaten().getZutat().get(a).getEinheit() + " " + rezept.getZutaten().getZutat().get(a).getName());
 		}
 			
-		System.out.println("\n" + "Arbeitszeit: " + r.getZubereitung().getZeit());
-		System.out.println("Schwierigkeitsgrad: " + r.getZubereitung().getSchwierigkeit());
-		System.out.println("Brennwert: " + r.getZubereitung().getBrennwert());
-		System.out.println("Zubereitung: " + r.getZubereitung().getAnleitung() + "\n\n");
-}
+		System.out.println("\n" + "Arbeitszeit: " + rezept.getZubereitung().getZeit());
+		System.out.println("Schwierigkeitsgrad: " + rezept.getZubereitung().getSchwierigkeit());
+		System.out.println("Brennwert: " + rezept.getZubereitung().getBrennwert());
+		System.out.println("Zubereitung: " + rezept.getZubereitung().getAnleitung() + "\n\n");
+	}
 	
-private static void kommentare(int i) throws JAXBException{
-	
-	Rezept r = getRezepte().getRezept().get(i);
-	
+	public void kommentare(int i) throws JAXBException{
+		
+		Rezept rezept = this.rezepte.getRezept().get(i);
+		
 		System.out.println("Kommentare: \n");
-		int b = 1;
-		for(int a = 0; a < r.getComments().getComment().size(); a++, b++){
-			System.out.println("Kommentar " + b + ", von " + r.getComments().getComment().get(a).getUser() + " am " + r.getComments().getComment().get(a).getDatum());
-			System.out.println(r.getComments().getComment().get(a).getUserPic());
-			System.out.println(r.getComments().getComment().get(a).getKommentar() + "\n");
+		int index = 1;
+		for(int a = 0; a < rezept.getComments().getComment().size(); a++, index++){
+				System.out.println("Kommentar " + index + ", von " + rezept.getComments().getComment().get(a).getUser() + " am " + rezept.getComments().getComment().get(a).getDatum());
+				System.out.println(rezept.getComments().getComment().get(a).getUserPic());
+				System.out.println(rezept.getComments().getComment().get(a).getKommentar() + "\n");
 		}
-}
-
-
-		
-private static Rezepte getRezepte() throws JAXBException {
-	JAXBContext ctx = JAXBContext.newInstance("generated");
-	Unmarshaller unmarshaller = ctx.createUnmarshaller();
-	Rezepte list = (Rezepte) unmarshaller.unmarshal(new File("src/Aufgabe3d_xml.xml"));
-	return list;
-}
-		
+	}
 }
 	
 
