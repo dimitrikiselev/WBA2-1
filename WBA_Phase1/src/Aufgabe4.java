@@ -63,14 +63,11 @@ private static void kommentieren(int i) throws JAXBException{
 	
 	getRezepte().getRezept().get(i).getComments().getComment().add(neuescomment);
 	
-//    Marshaller m = context.createMarshaller();
-//    m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-//    m.marshal(new ObjectFactory().createRezepte(rezepte), new File(xmlfile));
-//
-//    	JAXBContext ctx = JAXBContext.newInstance("generated");
-//    	Unmarshaller unmarshaller = ctx.createUnmarshaller();
-//    	Rezepte list = (Rezepte) unmarshaller.unmarshal(new File("src/Aufgabe3d_xml.xml"));
-//    	return list;
+	JAXBContext context = JAXBContext.newInstance("generated");
+    Marshaller m = context.createMarshaller();
+    m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+    m.marshal(new ObjectFactory().createRezepte(), new File("src/Aufgabe3d_xml.xml"));
+
 	
 }
 
@@ -119,10 +116,10 @@ private static void kommentare(int i) throws JAXBException{
 
 		
 private static Rezepte getRezepte() throws JAXBException {
-JAXBContext ctx = JAXBContext.newInstance("generated");
-Unmarshaller unmarshaller = ctx.createUnmarshaller();
-Rezepte list = (Rezepte) unmarshaller.unmarshal(new File("src/Aufgabe3d_xml.xml"));
-return list;
+	JAXBContext ctx = JAXBContext.newInstance("generated");
+	Unmarshaller unmarshaller = ctx.createUnmarshaller();
+	Rezepte list = (Rezepte) unmarshaller.unmarshal(new File("src/Aufgabe3d_xml.xml"));
+	return list;
 }
 		
 }
